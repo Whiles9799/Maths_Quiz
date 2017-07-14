@@ -1,6 +1,6 @@
 # MathsQuiz
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.0.
+ith [AngularThis project was generated w CLI](https://github.com/angular/angular-cli) version 1.2.0.
 
 ## Development server
 
@@ -26,3 +26,41 @@ Before running the tests make sure you are serving the app via `ng serve`.
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Work Experience report
+
+We were given 5 days to develop a maths quiz for a primary school questions with the following main aims
+-Generates random questions automatically and marks them
+-Asks 20 questions with a timer of 2 minute
+-Various different operations included which are configurable
+-The student recieves a score based on the number of correct answers and the time taken to complete the quiz
+-Student enters their name and their score will be saved to the scoreboard <--- This unfortunately was not implemented
+
+We also wanted to ensure that the layout and appearance of the website that the app would be hosted on was simple and child-friendly and that the game was easy to follow and play and difficult to break
+
+Day 1 - Learnt HTML and designed the website
+Day 2 - Implemented the functionality of the quiz
+Day 3 - Added teacher mode and cleaned up code, improved look of the website
+Day 4 - General improvements, failed to understand database
+Day 5 - Deployed, early database implementation, documentation
+
+## Replication
+
+To replicate my work, you would need to have the following:
+
+Atom IDE
+A Git Client (i.e. GitBash or GitKraken)
+Node.JS with the following installed (Angular 4, Firebase and Bootstrap)
+A cloud database (Firebase) To get started start a new Git Bash (or whatever you are using). Then install angular-cli with npm i -g @angular/cli You then need o create an angular app using the angular-cli with ng new "project name" Once done, do the command ng serve. This will allow you to run the app in development before making any commitments in GitHub. For editing, make the changes in files app.component.html and app.component.tsin the file area <ProjectName/src/app/. You can view any changes at localhost:4200, to rehost when returning to the app you must navigate into the app folder using cd "project name"
+
+## Installing Node.JS modules
+
+You can get the Firebase tools by running the command npm install -g firebase-tools - this will allow you to upload to Firebase You can get the Angular CLI by running the command npm install -g @angular/cli - this will allow you to use the Angular CLI.
+
+## Deployment to Firebase
+
+Once you have installed the Firebase tools - you need an account. To make an account head to https://console.firebase.google.com . Then login to the firebase cli by using 'firebase login' After you have logged in, you need to initialise your project with 'firebase init' You then need to do ng build, this will generate a "/dist" folder. Then deploy using firebase deploy. For more help on this, visit https://goo.gl/ZxSN6t
+
+## GitHub
+
+You can also upload to GitHub by creating a GitHub repo, then removing any firebase files in your project director. Do git init - this initialises your repo, then copy the command (4th/5th command in list) - it begins with git remote .... Once you have done that, do git add . or git . add --or , then git config --global user.email "your email" . Follow this with the same command, but end with user.name "user name" - this will say what your username will be when you upload to GitHub. Once you have entered this information, do git commit -m "first commit". This will be your first commitment. You can then push our work upto GitHub using git push
